@@ -1,0 +1,63 @@
+// Import Bootstrap and its default variables
+@import "~bootstrap/scss/bootstrap";
+
+// google-font
+@import url("https://fonts.googleapis.com/css2?family=Merienda&family=Noto+Serif+TC:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+  font-family: var(--main-title-chinese);
+}
+
+:root {
+  --main-colorfff: #fff;
+  --main-colorblock: #141414;
+  --main-color79: #797979;
+  --main-colorda: #dadada;
+  --main-colorf2: #f2f2f2;
+  --main-colorf2e: #f2ebdf;
+  --main-colorfb2: #fb2643;
+  --main-title-english: "Merienda";
+  --main-title-chinese: "Noto Serif TC";
+  --nav-height: 5rem; /** 80px **/
+  --margin: 11.25rem; /** 180px **/
+  --h1: 2.25rem; /** 36px **/
+  --h2: 1.5rem; /** 24px **/
+  --h3: 1.42rem; /** 20px **/
+  --h4: 1.14rem; /** 16px **/
+  --p: 1rem;
+  --h5: 0.92rem; /** 13px **/
+  --h6: 0.85rem; /** 12px **/
+}
+
+table {
+  .cart-inp {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border-bottom: 2px #707070 solid;
+  }
+  .cart-inp > input {
+    outline: none;
+    background-color: none;
+    border: none;
+    margin-left: 70px;
+    margin-bottom: 3px;
+    margin-top: 25px;
+  }
+  .cart-form > label {
+    width: 500px;
+    margin-top: 10px;
+  }
+  .cart-form {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
