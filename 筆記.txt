@@ -1,0 +1,8 @@
+react中掛入font awesome
+安裝套件指令請看：
+https://github.com/FortAwesome/react-fontawesome
+寫入程式碼請看：
+https://ithelp.ithome.com.tw/articles/10231200?sc=rss.qu
+
+react中inline-style這樣寫：
+<h1 style={{fontFamily: 'var(--main-title-english)', fontSize: 'var(--h1)'}}>My Cart</h1>

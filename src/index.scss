@@ -1,5 +1,5 @@
 // Import Bootstrap and its default variables
-@import "~bootstrap/scss/bootstrap";
+// @import "~bootstrap/scss/bootstrap";
 
 // google-font
 @import url("https://fonts.googleapis.com/css2?family=Merienda&family=Noto+Serif+TC:wght@300&display=swap");
@@ -7,16 +7,17 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-html {
-  font-size: 14px;
+body {
   font-family: var(--main-title-chinese);
+  font-size: var(--h4);
 }
 
 :root {
   --main-colorfff: #fff;
-  --main-colorblock: #141414;
+  --main-colorblack: #141414;
   --main-color79: #797979;
   --main-colorda: #dadada;
   --main-colorf2: #f2f2f2;
@@ -35,7 +36,85 @@ html {
   --h6: 0.85rem; /** 12px **/
 }
 
-table {
+.cart-container {
+  max-width: 960px;
+  margin: 80px auto;
+}
+
+.cart-title {
+  padding: 20px 0;
+  line-height: 60px;
+
+  h1 {
+    font-size: var(--h1);
+    font-family: var(--main-title-english);
+  }
+}
+
+.cart-table {
+  max-width: 960px;
+  border-collapse: collapse;
+  width: 100%;
+
+  thead {
+    font-size: var(--h2);
+    background-color: var(--main-colorblack);
+
+    th {
+      color: var(--main-colorfff);
+    }
+  }
+
+  tbody {
+    line-height: 40px;
+    tr {
+      font-size: var(--h4);
+      text-align: center;
+    }
+
+    tr:nth-child(1) {
+      font-size: var(--h2);
+      text-align: left;
+    }
+
+    td {
+      // padding: 10px;
+    }
+
+    input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+    }
+
+    img {
+      width: 130px;
+      height: 130px;
+    }
+
+    .cart-number {
+      border: 1px solid var(--main-color79);
+      display: inline;
+      padding: 0 30px;
+      margin: 10px;
+    }
+
+    .cart-addBtn,
+    .cart-deBtn {
+      width: 25px;
+      height: 25px;
+      vertical-align: sub;
+    }
+
+    .cart-btn {
+      cursor: pointer;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
   .cart-inp {
     display: flex;
     flex-direction: column;

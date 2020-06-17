@@ -1,0 +1,8 @@
+
+table預設樣式
+border-collapse: collapse / separate
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-collapse
+
+legend & fieldset
+
+<label><input type="checkbox" id=""/>同帳戶資料</label>
