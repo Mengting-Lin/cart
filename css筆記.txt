@@ -6,3 +6,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-collapse
 legend & fieldset
 
 <label><input type="checkbox" id=""/>同帳戶資料</label>
+
+button預設樣式
+border-style
+https://www.wibibi.com/info.php?tid=89
