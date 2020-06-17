@@ -10,3 +10,7 @@ legend & fieldset
 button預設樣式
 border-style
 https://www.wibibi.com/info.php?tid=89
+
+input type
+https://www.w3schools.com/tags/tag_input.asp
+

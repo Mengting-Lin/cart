@@ -34,7 +34,7 @@ function App() {
           </thead>
           <tbody>
             <tr>
-              <th colspan="7">購買清單－課程</th>
+              <th className="cart-category" colspan="7">購買清單－課程</th>
             </tr>
             <tr>
               <th><input type="checkbox" id=""/></th>
@@ -68,40 +68,36 @@ function App() {
 
         <div>
           <form className="cart-form" action="#" method="GET" enctype="multipart/form-data">
-            <div>
+            <div className="cart-buyer-info">
               <h2>收件人資訊</h2>
                 <fieldset>
-                  <label><input type="checkbox" id=""/>同帳戶資料</label><br/>           
-                  <div className="cart-inp">
+                  <label><input type="checkbox" id=""/> 同帳戶資料</label>          
+                  <div className="cart-input">
                     <label for="name">姓名</label>
-                    <br/>
-                    <input className="" autofocus autocomplete="off" id="name" type="text" name="name" placeholder="" size="10"/>
+                    <input className="" autofocus autocomplete="off" id="name" type="text" name="name" placeholder=""/>
                   </div>                
-                  <div className="cart-inp">
+                  <div className="cart-input">
                     <label for="add">地址</label>
-                    <br/>
                     <input className="" id="add" type="text"/>
                   </div>                              
-                  <div className="cart-inp">
+                  <div className="cart-input">
                     <label for="phone">手機號碼</label>
-                    <br/>
                     <input className="" id="phone" type="text"/>
                   </div>              
-                  <div className="cart-inp">
+                  <div className="cart-input">
                     <label for="email">電子信箱</label>
-                    <br/>
                     <input id="email" className="" type="text"/>
                   </div>              
                 </fieldset>
             </div>
-            <div>
+            <div className="cart-invoice">
               <h2>統一發票</h2>
                 <fieldset>
-                  <div className="">
+                  <div className="cart-input">
                     <label><input type="checkbox" id=""/>個人戶電子發票</label><br/>
                     <span>中獎時會寄送至收件地址</span>
                   </div>
-                  <div className="cart-inp">           
+                  <div className="cart-input">           
                     <label><input type="checkbox" id=""/>電子發票載具</label>
                     <br/>              
                     <label for="einvoice">載具號碼</label>
@@ -133,8 +129,8 @@ function App() {
           </form>
         </div>
 
-        <div>
-          <div className="cart-inp">
+        <div className="cart-total">
+          <div className="discount">
             <label for="discount">折扣碼</label><br/>
             <input className="" id="discount" type="text"/>
           </div>
